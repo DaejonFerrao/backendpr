@@ -1,0 +1,14 @@
+{
+  "testemail@gmail.com": {
+    "email": "testemail@gmail.com",
+    "password": "testpass123",
+    "display_name": "testuser"
+  },
+  "string": {
+    "id": "9d83a508-f83e-11ee-a9aa-00155d8121c8",
+    "email": "string",
+    "display_name": "string",
+    "password": "string",
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5ZDgzYTUwOC1mODNlLTExZWUtYTlhYS0wMDE1NWQ4MTIxYzgifQ.vVcdUgH076bmXB41mkv3XzmovGYcYlMKEn6KU8UCSzE"
+  }
+}

@@ -6,7 +6,11 @@ from cred import getUserDB, saveUserDB
 from typing import Union, List
 import uuid
 
-import jwt
+# import jwt
+# That's the wrong module
+# The actual module is called "python-jose"
+# Should already be installed if you followed the instructions in readme.md
+from jose import jwt
 
 SECRET_KEY = "testkey"
 
@@ -35,7 +39,9 @@ async def register_user(credentials: UserCredentials):
         raise HTTPException(400, detail="user already exists")
     
     new_user = {
-        "id" : str(uuid.uuid1()),
+        # "id" : str(uuid.uuid1()),
+        # uuid4 is the standard these days so this is preferred
+        "id" : str(uuid.uuid4()),
         "email": credentials.email,
         "display_name": credentials.display_name,
         "password": credentials.password
